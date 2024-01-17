@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Inicio - STEAM ARG</title>
+</head>
+<body>
+
+<div class="container">
+    <header class="bg-info text-white text-center p-4">
+        <h1>Bienvenido a Steam ARG</h1>
+        <p>Gracias por visitarnos. Somos tu fuente confiable para compra de Keys y dlc´s.</p>
+    </header>
+
+    <section class="row">
+        <div class="col-md-6">
+            <h2>Sección 1</h2>
+            <p>Contenido de la sección 1...</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Sección 2</h2>
+            <p>Contenido de la sección 2...</p>
+        </div>
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Contacto - Mi Sitio Web</title>
+</head>
+<body>
+
+<div class="container">
+    <header class="bg-info text-white text-center p-4">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para ayudarte. Completa el formulario o utiliza la información de contacto a continuación.</p>
+    </header>
+
+    <section class="row">
+        <div class="col-md-6">
+            <form id="contactForm" onsubmit="return validarFormulario()">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" placeholder="tucorreo@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu Mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <h2>Información de Contacto</h2>
+            <p>Detalles de contacto aquí...</p>
+        </div>
+    </section>
+
+    <footer class="bg-info text-white text-center p-3 mt-4">
+        <p>&copy; 2024 Mi Sitio Web</p>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function validarFormulario() {
+        var nombre = document.getElementById("nombre").value;
+        var email = document.getElementById("email").value;
+        var mensaje = document.getElementById("mensaje").value;
+
+        if (nombre === "" || email === "" || mensaje === "") {
+            alert("Formulario incompleto. Por favor, completa todos los campos.");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+
+</body>
+</html>
